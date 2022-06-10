@@ -8,7 +8,11 @@
      width: 1300px;
      height: 100vh;
      margin: 0 auto;
-     position : relative;
+     position: relative;
+}
+
+.header {
+     margin: 10px 0;
 }
 
 .menu {
@@ -18,6 +22,19 @@
 
 .navbar {
      cursor: pointer;
+}
+
+.navbar i {
+     width: 61px;
+     font-size: 30px;
+     padding: 14px 18px;
+     border-radius: 50px;
+     color: #03bf46;
+     background-color: #eaffee;
+}
+
+.navbar i:hover {
+     background-color: #d9f0dd;
 }
 
 .navbarItem {
@@ -32,6 +49,47 @@
      transition: 0.2s;
      background-color: #eaffee;
      visibility: hidden;
+}
+
+.main {
+     display: flex;
+     justify-content: center;
+}
+
+.myPhoto {
+     width: 350px;
+}
+
+.myName {
+     text-align: center;
+     font-size: 30px;
+     margin: 6px 0;
+}
+.title {
+     text-align: center;
+     margin-bottom: 8px;
+}
+
+.important_btn {
+     display: flex;
+     justify-content: center;
+}
+
+.aboutBtn {
+     padding: 10px 20px;
+     background-color: #000000;
+     color: #ffff;
+     margin: 5px;
+     border-radius: 5px;
+}
+
+.portfolioBtn {
+     padding: 10px 20px;
+     background-color: #03bf46;
+     color: #ffff;
+     margin: 5px;
+     border: none;
+     border-radius: 5px;
 }
 
 .navbarItem:nth-child(odd) {
@@ -56,5 +114,32 @@
 .myclass {
      visibility: visible;
      transition: 0.5s;
-     transform: scaleY(1);
+     transform: scaleX(1);
 }
+
+/* Footer Section start here*/
+
+/* .footer {
+     position: absolute;
+     bottom: 10%;
+} */
+
+.footer-wrapper {
+     margin-top: 65px;
+     display: flex;
+     justify-content: space-between;
+}
+
+.social-link i {
+     font-size: 22px;
+     color: #000000;
+     opacity: 0.5;
+}
+
+.social-link i:hover {
+     color: #000000;
+     opacity: 1;
+     cursor: pointer;
+}
+
+/* Footer Section end here*/

@@ -7,6 +7,11 @@
                name="viewport"
                content="width=device-width, initial-scale=1.0"
           />
+          <!-- font awesome cdn -->
+          <link
+               rel="stylesheet"
+               href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+          />
           <title>Manjurul islam</title>
           <link rel="stylesheet" href="./css/index.css" />
      </head>
@@ -18,15 +23,16 @@
                               <img src="./img/logo.png" alt="logo" />
                          </a>
                          <div class="navbar">
-                              <img
+                              <!-- <img
                                    src="./img/navbar.png"
                                    alt="navbar"
                                    class="navbar"
                                    id="navbar"
-                              />
+                              /> -->
 
-                              <!-- <i class="fa-solid fa-bars"></i> -->
-                              <!-- <i class="fa-solid fa-xmark"></i> -->
+                              <div class="navbar" id="navbar">
+                                   <i class="fa-solid fa-bars" id="bars"></i>
+                              </div>
 
                               <ul class="navbarItem" id="navbarItem">
                                    <li class="navItem green">
@@ -72,7 +78,37 @@
                          </div>
                     </div>
                </div>
-               <div class="main"></div>
+               <div class="main">
+                    <div class="introduce">
+                         <img
+                              src="./img/me.png"
+                              alt="manjurul islam"
+                              class="myPhoto"
+                         />
+                         <h1 class="myName">Md Manjurul Islam</h1>
+                         <p class="title">Certified Graphic Designer</p>
+                         <div class="important_btn">
+                              <button class="aboutBtn">About Me</button>
+                              <button class="portfolioBtn">My Portfolio</button>
+                         </div>
+                    </div>
+               </div>
+
+               <div class="footer">
+                    <div class="footer-wrapper">
+                         <div class="social-link">
+                              <i class="fa-brands fa-behance"></i>
+                         </div>
+
+                         <p class="copyright-text">
+                              &copy; 2022 Manjurul. All rights reserved
+                         </p>
+
+                         <div class="social-link">
+                              <i class="fa-brands fa-linkedin-in"></i>
+                         </div>
+                    </div>
+               </div>
           </div>
 
           <script src="./js/index.js"></script>
