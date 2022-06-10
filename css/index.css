@@ -31,12 +31,6 @@
      border-radius: 50px;
      color: #03bf46;
      background-color: #eaffee;
-     position: relative;
-}
-
-.navbar i::after {
-     content: attr("<i class= " fa-solid fa-xmark " ></i>");
-     position: absolute;
 }
 
 .navbar i:hover {
