@@ -1,0 +1,40 @@
+.pages-address {
+     width: 80%;
+     height: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-radius: 8px;
+     background-color: #eaffee;
+}
+
+.about-me {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin: 80px 0;
+}
+
+.my-skill div {
+     margin: 50px 0;
+}
+
+.skill-title {
+     margin-bottom: 10px;
+}
+
+.skill {
+     font-size: 14px;
+     font-weight: 500;
+     font-family: "Montserrat", sans-serif;
+}
+
+.my-skill-one .skill-title,
+.my-skill-one .skill {
+     text-align: right;
+}
+
+.my-skill-two .skill-title,
+.my-skill-two .skill {
+     text-align: left;
+}

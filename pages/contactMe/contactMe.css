@@ -1,0 +1,74 @@
+.pages-address {
+     width: 80%;
+     height: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-radius: 8px;
+     background-color: #eaffee;
+}
+
+.formBrief {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin: 80px 0;
+}
+.contact-title {
+     width: 666px;
+     text-align: center;
+     font-weight: 500;
+     font-family: "Montserrat", sans-serif;
+}
+
+.formWrapper {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+.myForm {
+     width: 700px;
+}
+
+.input-area {
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-start;
+     margin: 30px 0;
+}
+
+label {
+     font-weight: 600;
+     font-family: "Montserrat", sans-serif;
+     margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+     border: 1px solid #000000;
+     padding: 10px 15px;
+     border-radius: 5px;
+}
+
+::placeholder {
+     font-family: "Montserrat", sans-serif;
+}
+
+.btnBox {
+     display: flex;
+     justify-content: center;
+}
+
+.submit {
+     padding: 10px 30px;
+     font-family: "Montserrat", sans-serif;
+     border-radius: 5px;
+     border: none;
+     outline: none;
+     background-color: #000000;
+     color: #ffff;
+     font-size: 15px;
+     font-weight: 500;
+}
