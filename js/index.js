@@ -1,10 +1,13 @@
 const navbar = document.getElementById("navbar");
 const navbarItem = document.getElementById("navbarItem");
-const navBarIcon = document.getElementById("bars");
-const navcross = document.getElementById("xmark");
+const humburger = document.querySelector(".humburger");
+const portfolioBtn = document.querySelector(".portfolioBtn");
 
-navbar.addEventListener("click", () => {
+const toggleMenu = () => {
      navbarItem.classList.toggle("myclass");
-     // navbar.removeChild(navBarIcon);
-     navbar.replaceChild(navcross, navBarIcon);
-});
+     humburger.classList.toggle("active");
+};
+
+navbar.addEventListener("click", toggleMenu);
+
+portfolioBtn.addEventListener("click", toggleMenu);

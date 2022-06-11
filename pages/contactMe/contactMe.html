@@ -12,16 +12,21 @@
                rel="stylesheet"
                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
           />
-          <title>Manjurul islam</title>
-          <link rel="stylesheet" href="./css/index.css" />
+          <title>Manjurul islam - Contact Me</title>
+          <link rel="stylesheet" href="../../css/index.css" />
+          <link rel="stylesheet" href="./contactMe.css" />
      </head>
      <body>
           <div class="container">
                <div class="header">
                     <div class="menu">
-                         <a href="./index.html" class="brand">
-                              <img src="./img/logo.png" alt="logo" />
+                         <a href="../../index.html" class="brand">
+                              <img src="../../img/logo.png" alt="logo" />
                          </a>
+
+                         <div class="pages-address">
+                              <h1>Contact Me</h1>
+                         </div>
 
                          <div class="navbar">
                               <div class="navbar" id="navbar">
@@ -34,9 +39,7 @@
 
                               <ul class="navbarItem" id="navbarItem">
                                    <li class="navItem">
-                                        <a
-                                             class="navLink"
-                                             href="./pages/Logo/Logo.html"
+                                        <a class="navLink" href="#"
                                              >Logo Design</a
                                         >
                                    </li>
@@ -68,21 +71,21 @@
                                    <li class="navItem">
                                         <a
                                              class="navLink"
-                                             href="./pages/aboutMe/aboutMe.html"
+                                             href="../aboutMe/aboutMe.html"
                                              >About Me</a
                                         >
                                    </li>
                                    <li class="navItem">
                                         <a
                                              class="navLink black"
-                                             href="./pages/contactMe/contactMe.html"
+                                             href="./contactMe.html"
                                              >Contact</a
                                         >
                                    </li>
                                    <li class="navItem">
                                         <a
                                              class="navLink"
-                                             href="./pages/shop/shop.html"
+                                             href="../shop/shop.html"
                                              >shop</a
                                         >
                                    </li>
@@ -90,27 +93,56 @@
                          </div>
                     </div>
                </div>
+
                <div class="main">
-                    <div class="introduce-me">
-                         <div class="introduce-me-wrapper">
-                              <img
-                                   src="./img/me.png"
-                                   alt="manjurul islam"
-                                   class="myPhoto"
-                              />
-                              <h1 class="myName">Md Manjurul Islam</h1>
-                              <p class="title">Certified Graphic Designer</p>
-                              <div class="important_btn">
-                                   <button class="aboutBtn">
-                                        <a href="./pages/aboutMe/aboutMe.html"
-                                             >About Me</a
-                                        >
-                                   </button>
-                                   <button class="portfolioBtn">
-                                        My Portfolio
+                    <div class="formBrief">
+                         <p class="contact-title">
+                              Fill this <b>Creative Brief</b> and I will come
+                              back to you with ideas and suggestions. Or contact
+                              me via the form below and we will setup a call to
+                              discuss your project.
+                         </p>
+                    </div>
+
+                    <div class="formWrapper">
+                         <form action="" class="myForm">
+                              <div class="input-area">
+                                   <label for="text"> Name* </label
+                                   ><input
+                                        type="text"
+                                        id="text"
+                                        placeholder="Enter Name...."
+                                   />
+                              </div>
+
+                              <div class="input-area">
+                                   <label for="email"> Email* </label
+                                   ><input
+                                        type="email"
+                                        id="email"
+                                        placeholder="Enter Email...."
+                                   />
+                              </div>
+
+                              <div class="input-area">
+                                   <label for="message">Message*</label>
+
+                                   <textarea
+                                        id="message"
+                                        name="message"
+                                        rows="4"
+                                        cols="70"
+                                        placeholder="Your Message...."
+                                        style="height: 150px; resize: none"
+                                   ></textarea>
+                              </div>
+
+                              <div class="btnBox">
+                                   <button type="submit" class="submit">
+                                        Submit
                                    </button>
                               </div>
-                         </div>
+                         </form>
                     </div>
                </div>
 
@@ -131,7 +163,6 @@
                </div>
           </div>
 
-          <script src="./js/index.js"></script>
+          <script src="../../js/index.js"></script>
      </body>
 </html>
-

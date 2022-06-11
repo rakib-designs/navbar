@@ -1,0 +1,9 @@
+.pages-address {
+     width: 80%;
+     height: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-radius: 8px;
+     background-color: #eaffee;
+}

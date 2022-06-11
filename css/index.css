@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800&display=swap");
+
 * {
      margin: 0;
      padding: 0;
@@ -18,24 +20,12 @@
 .menu {
      display: flex;
      justify-content: space-between;
+     align-items: center;
+     height: 65px;
 }
 
 .navbar {
      cursor: pointer;
-}
-
-.navbar i {
-     width: 61px;
-     font-size: 30px;
-     padding: 14px 18px;
-     border-radius: 50px;
-     color: #03bf46;
-     background-color: #eaffee;
-     position: relative;
-}
-
-.navbar i:hover {
-     background-color: #d9f0dd;
 }
 
 .navbarItem {
@@ -52,7 +42,72 @@
      visibility: hidden;
 }
 
-.main {
+.navItem:nth-child(odd) {
+     background-color: #03bf46;
+}
+
+.navItem:nth-child(even) {
+     background-color: #eaffee;
+}
+
+.navItem {
+     padding: 20px 10px;
+     text-align: center;
+}
+
+.navLink {
+     text-decoration: none;
+     font-weight: 500;
+     font-family: "Montserrat", sans-serif;
+}
+
+.navItem:nth-child(odd) .navLink {
+     color: #fff;
+}
+
+.navItem:nth-child(even) .navLink {
+     color: #000000;
+}
+
+/* Hummbuerger menu css start here*/
+
+.humburger {
+     width: 62px;
+     padding: 15px;
+     border-radius: 50px;
+     background-color: #eaffee;
+}
+
+.humburger:hover {
+     background-color: #cdebd2;
+}
+
+.bar {
+     display: block;
+     width: 30px;
+     height: 4px;
+     margin: 5px auto;
+     border-radius: 5px;
+     background-color: #03bf46;
+     transition: all 0.3s ease-in-out;
+     -webkit-transition: all 0.3s ease-in-out;
+}
+
+.humburger.active .bar:nth-child(2) {
+     opacity: 0;
+}
+
+.humburger.active .bar:nth-child(1) {
+     transform: translateY(8px) rotate(45deg);
+}
+
+.humburger.active .bar:nth-child(3) {
+     transform: translateY(-10px) rotate(-45deg);
+}
+
+/* Hummbuerger menu css end here*/
+
+.introduce-me {
      display: flex;
      justify-content: center;
 }
@@ -77,42 +132,35 @@
 }
 
 .aboutBtn {
-     padding: 10px 20px;
+     padding: 14px 45px;
      background-color: #000000;
      color: #ffff;
      margin: 5px;
+     outline: none;
+     border: none;
      border-radius: 5px;
+     cursor: pointer;
+     font-family: "Montserrat", sans-serif;
+}
+
+.aboutBtn a {
+     text-decoration: none;
+     color: #ffff;
 }
 
 .portfolioBtn {
-     padding: 10px 20px;
+     padding: 14px 45px;
      background-color: #03bf46;
      color: #ffff;
      margin: 5px;
      border: none;
      border-radius: 5px;
-}
-
-.navbarItem:nth-child(odd) {
-     background-color: rgb(156, 89, 89);
-}
-
-.navItem {
-     padding: 20px 10px;
-     text-align: center;
-}
-
-.navLink {
-     text-decoration: none;
-}
-
-.green {
-     width: 100%;
-     background-color: #03bf46;
-     color: aliceblue;
+     cursor: pointer;
+     font-family: "Montserrat", sans-serif;
 }
 
 .myclass {
+     height: auto;
      visibility: visible;
      transition: 0.5s;
      transform: scaleX(1);
@@ -122,8 +170,10 @@
 
 .footer-wrapper {
      margin-top: 65px;
+     padding-bottom: 20px;
      display: flex;
      justify-content: space-between;
+     align-items: center;
 }
 
 .social-link i {
@@ -136,6 +186,11 @@
      color: #000000;
      opacity: 1;
      cursor: pointer;
+}
+
+.copyright-text {
+     font-family: "Montserrat", sans-serif;
+     font-weight: 400;
 }
 
 /* Footer Section end here*/
