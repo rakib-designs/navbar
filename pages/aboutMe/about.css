@@ -1,12 +1,7 @@
-.pages-address {
-     width: 80%;
-     height: 100%;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     border-radius: 8px;
-     background-color: #eaffee;
-}
+/* @font-face {
+     font-family: "Editor-Extra-Bold";
+     src: url("../../font/Editor-ExtraBold.woff");
+} */
 
 .about-me {
      display: flex;
@@ -16,11 +11,12 @@
 }
 
 .my-skill div {
-     margin: 50px 0;
+     margin: 80px 0;
 }
 
 .skill-title {
      margin-bottom: 10px;
+     font-family: "Editor-Extra-Bold", sans-serif;
 }
 
 .skill {

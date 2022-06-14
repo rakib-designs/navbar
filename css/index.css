@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800&display=swap");
 
-@font-face {
-     font-family: "Editor";
-     src: url("../font/Editor-Regular.woff");
-}
+/* :root {
+     --primary-color: #03bf46;
+     --secondary-color: #eaffee;
+     --white-color: #fff;
+     --black-color: #000000;
+} */
 
 * {
      margin: 0;
@@ -40,20 +42,19 @@
      top: 10%;
      left: 7%;
      right: 10%;
-     bottom: 10%;
      z-index: 999;
      transform: scaleY(0);
      transition: 0.2s;
-     background-color: #eaffee;
+     background-color: var(--secondary-color);
      visibility: hidden;
 }
 
 .navItem:nth-child(odd) {
-     background-color: #03bf46;
+     background-color: var(--primary-color);
 }
 
 .navItem:nth-child(even) {
-     background-color: #eaffee;
+     background-color: var(--secondary-color);
 }
 
 .navItem {
@@ -68,11 +69,11 @@
 }
 
 .navItem:nth-child(odd) .navLink {
-     color: #fff;
+     color: var(--white-color);
 }
 
 .navItem:nth-child(even) .navLink {
-     color: #000000;
+     color: var(--black-color);
 }
 
 /* Hummbuerger menu css start here*/
@@ -81,11 +82,11 @@
      width: 62px;
      padding: 15px;
      border-radius: 50px;
-     background-color: #eaffee;
+     background-color: var(--secondary-color);
 }
 
 .humburger:hover {
-     background-color: #cdebd2;
+     background-color: var(--secondary-color);
 }
 
 .bar {
@@ -94,7 +95,7 @@
      height: 4px;
      margin: 5px auto;
      border-radius: 5px;
-     background-color: #03bf46;
+     background-color: var(--primary-color);
      transition: all 0.3s ease-in-out;
      -webkit-transition: all 0.3s ease-in-out;
 }
@@ -120,16 +121,19 @@
 
 .myPhoto {
      width: 350px;
+     border-radius: 5px;
 }
 
 .myName {
      text-align: center;
      font-size: 30px;
-     margin: 6px 0;
+     margin: 8px 0 4px;
+     font-family: "Editor-Extra-Bold", sans-serif;
 }
 .title {
      text-align: center;
      margin-bottom: 8px;
+     font-family: "Editor-Medium", sans-serif;
 }
 
 .important_btn {
@@ -140,7 +144,7 @@
 .aboutBtn {
      padding: 14px 45px;
      background-color: #000000;
-     color: #ffff;
+     color: var(--white-color);
      margin: 5px;
      outline: none;
      border: none;
@@ -151,13 +155,13 @@
 
 .aboutBtn a {
      text-decoration: none;
-     color: #ffff;
+     color: var(--white-color);
 }
 
 .portfolioBtn {
      padding: 14px 45px;
-     background-color: #03bf46;
-     color: #ffff;
+     background-color: var(--primary-color);
+     color: var(--white-color);
      margin: 5px;
      border: none;
      border-radius: 5px;
@@ -174,6 +178,10 @@
 
 /*Pages Design start here*/
 
+.pages-address h1 {
+     font-family: "Editor-Extra-bold", sans-serif;
+}
+
 .pages-address {
      width: 80%;
      height: 100%;
@@ -181,14 +189,14 @@
      justify-content: center;
      align-items: center;
      border-radius: 8px;
-     background-color: #eaffee;
+     background-color: var(--secondary-color);
 }
 
 .project-Wrapper {
      display: flex;
      flex-wrap: wrap;
      justify-content: center;
-     margin-top: 40px;
+     margin: 40px 0;
 }
 
 .card {
@@ -220,7 +228,7 @@
      z-index: 10;
      transform: skew(0);
      transform: translate(-50%, -50%);
-     background-color: #eaffee;
+     background-color: var(--secondary-color);
      transition: 0.2s all ease-in-out;
 }
 
@@ -232,12 +240,24 @@
      opacity: 1;
 }
 
+.project-info h3 {
+     color: var(--primary-color);
+     font-size: 35px;
+     font-family: "Editor-Medium", sans-serif;
+}
+
+.project-info p {
+     color: #787777;
+     font-family: "Montserrat", sans-serif;
+}
 /*Pages Design end here*/
 
 /* Footer Section start here*/
 
+.home-footer {
+     margin-top: 110px;
+}
 .footer-wrapper {
-     margin-top: 65px;
      padding-bottom: 20px;
      display: flex;
      justify-content: space-between;
@@ -246,12 +266,12 @@
 
 .social-link i {
      font-size: 22px;
-     color: #000000;
+     color: var(--black-color);
      opacity: 0.5;
 }
 
 .social-link i:hover {
-     color: #000000;
+     color: var(--black-color);
      opacity: 1;
      cursor: pointer;
 }

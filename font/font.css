@@ -1,0 +1,14 @@
+@font-face {
+     font-family: "Editor";
+     src: url("./Editor-Regular.woff");
+}
+
+@font-face {
+     font-family: "Editor-Extra-Bold";
+     src: url("./Editor-ExtraBold.woff");
+}
+
+@font-face {
+     font-family: "Editor-Medium";
+     src: url("./Editor-Medium.woff");
+}
