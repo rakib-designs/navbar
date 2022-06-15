@@ -4,6 +4,11 @@
 }
 
 @font-face {
+     font-family: "Editor-Bold";
+     src: url("./Editor-Bold.woff");
+}
+
+@font-face {
      font-family: "Editor-Extra-Bold";
      src: url("./Editor-ExtraBold.woff");
 }
