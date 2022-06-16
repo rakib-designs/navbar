@@ -21,7 +21,7 @@
 }
 
 .header {
-     margin: 10px 0;
+     margin: 40px 0;
 }
 
 .menu {
@@ -180,6 +180,7 @@
 
 .pages-address h1 {
      font-family: "Editor-Bold", sans-serif;
+     color: var(--white-color);
 }
 
 .pages-address {
@@ -188,8 +189,8 @@
      display: flex;
      justify-content: center;
      align-items: center;
-     border-radius: 8px;
-     background-color: var(--secondary-color);
+     /* border-radius: 8px; */
+     background-color: var(--primary-color);
 }
 
 .project-Wrapper {
@@ -215,8 +216,8 @@
 }
 
 .project-info {
-     width: 100%;
-     height: 100%;
+     width: 105%;
+     height: 105%;
      position: absolute;
      display: flex;
      flex-direction: column;
@@ -230,24 +231,32 @@
      transform: translate(-50%, -50%);
      background-color: var(--secondary-color);
      transition: 0.2s all ease-in-out;
+     visibility: hidden;
+     overflow: hidden;
 }
 
 .card:hover .project-info {
      visibility: visible;
+     top: 50%;
      transition: 0.4s all ease-in-out;
      transform: skew(1);
-     top: 50%;
      opacity: 1;
+}
+
+.project-link {
+     text-decoration: none;
 }
 
 .project-info h3 {
      color: var(--primary-color);
      font-size: 35px;
+     text-align: center;
      font-family: "Editor-Medium", sans-serif;
 }
 
 .project-info p {
      color: #787777;
+     text-align: center;
      font-family: "Montserrat", sans-serif;
 }
 /*Pages Design end here*/
@@ -291,6 +300,7 @@
      height: 100%;
      z-index: 77;
      cursor: grab;
+     background-color: var(--secondary-color);
 }
 
 /* Footer Section end here*/

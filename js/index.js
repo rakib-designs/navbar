@@ -17,7 +17,7 @@ portfolioBtn.addEventListener("click", toggleMenu);
 overley.addEventListener(
      "click",
      function (event) {
-          if (!event.target.closest("#navbarItem")) {
+          if (!event.target.closest(".navbarItem")) {
                closeModal();
           }
      },
