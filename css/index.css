@@ -15,9 +15,13 @@
 
 .container {
      width: 1300px;
-     height: 100vh;
      margin: 0 auto;
      position: relative;
+}
+
+.container-fluid {
+     width: 1042px;
+     margin: 0 auto;
 }
 
 .header {
@@ -33,21 +37,41 @@
 
 .navbar {
      cursor: pointer;
+     z-index: 2222;
 }
 
 .navbarItem {
-     width: 86%;
+     width: 20%;
      list-style-type: none;
      position: absolute;
-     top: 10%;
-     left: 7%;
+     top: 3%;
+     left: 40%;
      right: 10%;
      z-index: 999;
+     border-radius: 50px;
      transform: scaleY(0);
      transition: 0.2s;
      background-color: var(--secondary-color);
-     visibility: hidden;
+     visibility: visible;
 }
+
+.brand {
+     z-index: 2222;
+}
+
+.logo {
+     width: 60px;
+}
+
+/* .navbarItem {
+     width: 200px;
+     list-style-type: none;
+     position: absolute;
+     padding: 10px 20px;
+     border-radius: 50px;
+     background-color: var(--secondary-color);
+     visibility: hidden;
+} */
 
 .navItem:nth-child(odd) {
      background-color: var(--primary-color);
@@ -86,7 +110,12 @@
 }
 
 .humburger:hover {
-     background-color: var(--secondary-color);
+     background-color: var(--primary-color);
+     transition: all 0.5s ease-in-out;
+}
+
+.humburger:hover .bar {
+     background-color: var(--white-color);
 }
 
 .bar {
@@ -116,65 +145,353 @@
 
 .introduce-me {
      display: flex;
+     align-items: center;
      justify-content: center;
+     padding: 80px 0;
+     gap: 50px;
 }
 
 .myPhoto {
      width: 350px;
-     border-radius: 5px;
+     border: 1px solid var(--primary-color);
+}
+
+.myTitle {
+     width: 360px;
 }
 
 .myName {
-     text-align: center;
-     font-size: 30px;
-     margin: 8px 0 4px;
-     font-family: "Editor-Bold", sans-serif;
+     font-size: 40px;
+     margin: 8px 0 15px;
+     color: var(--black-color);
+     font-family: "Editor-Extra-Bold", sans-serif;
 }
 .title {
-     text-align: center;
-     margin-bottom: 8px;
-     font-family: "Editor-Medium", sans-serif;
+     text-align: left;
+     color: var(--black-color);
+     font-family: "Montserrat", sans-serif;
+     font-weight: 400;
+     margin-bottom: 20px;
 }
 
-.important_btn {
+.importantBtn {
      display: flex;
-     justify-content: center;
+     gap: 20px;
 }
 
-.aboutBtn {
-     padding: 14px 45px;
-     background-color: #000000;
-     color: var(--white-color);
-     margin: 5px;
+/* Button CSS START HERE*/
+
+.myBtn {
+     padding: 15px 40px;
+     border: none;
      outline: none;
-     border: none;
-     border-radius: 5px;
-     cursor: pointer;
+     background: transparent;
      font-family: "Montserrat", sans-serif;
+     border: 2px solid var(--black-color);
+     cursor: pointer;
+     font-size: 16px;
+     font-weight: 600;
+     position: relative;
+     z-index: 1;
+     color: var(--white-color);
+     overflow: hidden;
 }
 
-.aboutBtn a {
+.myBtn a {
      text-decoration: none;
-     color: var(--white-color);
+     color: var(--black-color);
+     position: relative;
+     z-index: 3;
 }
 
-.portfolioBtn {
-     padding: 14px 45px;
+.myBtn::after {
+     position: absolute;
+     content: "";
+     top: 50%;
+     left: 0;
+     width: 235px;
+     height: 220px;
+     /* background-color: #041230; */
      background-color: var(--primary-color);
-     color: var(--white-color);
-     margin: 5px;
-     border: none;
-     border-radius: 5px;
-     cursor: pointer;
-     font-family: "Montserrat", sans-serif;
+     transform: rotate(45deg) translate(-50%, 65%);
+     z-index: 1;
+     color: #fff;
+     transition: all 0.4s ease-in-out;
+     z-index: 2;
 }
 
-.myclass {
+.myBtn:hover::after {
+     top: 0;
+     transform: rotate(45deg) translate(-30%, -30%);
+     transition: all 0.5s ease-in-out;
+}
+
+.myBtn:hover a {
+     color: var(--white-color);
+     transition: all 0.5s ease-in-out;
+}
+
+/* THE BUTTON CSS END HERE */
+
+.myNavbar {
      height: auto;
      visibility: visible;
      transition: 0.5s;
      transform: scaleX(1);
 }
+
+/* ACHIVMENT CSS START HERE*/
+
+.myAchivmentSection {
+     padding: 80px 40px;
+     background-color: var(--secondary-color);
+}
+
+.myAchivment {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+
+.achivmentInfo h2 {
+     font-family: "Editor-Bold", sans-serif;
+     color: var(--black-color);
+}
+
+.achivmentInfo p {
+     line-height: 40px;
+     font-family: "Montserrat", sans-serif;
+     color: var(--black-color);
+}
+
+/* ACHIVMENT CSS END HERE*/
+
+/* CLIENT SAYS CSS START HERE*/
+
+.clientSays {
+     padding: 60px 0;
+}
+
+.sectionTitleWrapper {
+     width: 100%;
+     display: flex;
+     justify-content: center;
+}
+
+.clientReviewWrapper {
+     width: 100%;
+     position: relative;
+}
+
+.clientReview {
+     width: 850px;
+     display: flex;
+     justify-content: space-between;
+     margin: 0 auto;
+     padding: 50px 40px;
+     border: 2px solid var(--secondary-color);
+}
+
+.clientInfo {
+     width: 70%;
+}
+
+.sectionTitle {
+     width: 460px;
+     text-align: center;
+     font-size: 32px;
+     padding: 80px 0;
+     color: var(--black-color);
+     font-family: "Editor-Bold", sans-serif;
+}
+
+.clientName {
+     margin-bottom: 8px;
+     font-size: 32px;
+     color: var(--black-color);
+     font-family: "Editor-Bold", sans-serif;
+}
+
+.clientTitle {
+     color: var(--black-color);
+     font-size: 16px;
+     font-weight: 400;
+     display: block;
+     margin-bottom: 10px;
+     font-family: "Editor-Medium", sans-serif;
+}
+
+.aboutClient {
+     text-align: justify;
+     color: #403f3f;
+     font-family: "Montserrat", sans-serif;
+}
+
+.clientPhotos {
+     width: 210px;
+}
+
+.clientPhotos img {
+     width: 100%;
+     aspect-ratio: 1;
+}
+
+.owl-next {
+     position: absolute;
+     right: 10px;
+     top: 50%;
+     transform: translateY(-50%);
+}
+
+.owl-prev {
+     position: absolute;
+     left: 10px;
+     top: 50%;
+     transform: translateY(-50%);
+}
+
+.owl-prev,
+.owl-next {
+     width: 50px;
+     height: 50px;
+     border-radius: 50px !important;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: var(--secondary-color) !important;
+     cursor: pointer;
+}
+
+.fa-arrow-left,
+.fa-arrow-right {
+     font-size: 25px;
+     text-align: center;
+     cursor: pointer;
+}
+.owl-prev:hover,
+.owl-next:hover {
+     background-color: #03bf46 !important;
+     transition: all 0.2s ease-in-out;
+}
+
+.owl-dots span {
+     background-color: #bfdfc6 !important;
+}
+
+.owl-dots .active span {
+     background-color: #03bf46 !important;
+}
+
+/* .arrow:hover.arrow i {
+     color: #fff;
+} */
+
+/* CLIENT SAYS CSS END HERE*/
+
+/* FULL PORTFOLIO CSS START HERE*/
+
+.fullPortfolio {
+     background: #dafee1;
+     padding-bottom: 80px;
+}
+
+.projectWrapper {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.home-project-Wrapper {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     margin: 40px 0;
+}
+/* FULL PORTFOLIO CSS END HERE*/
+
+/* DISCOVERY SECTION CSS START HERE */
+
+.discoverySection {
+     margin-top: 50px;
+     background-color: #dafee1;
+     padding-bottom: 100px;
+}
+
+/* DISCOVERY SECTION CSS END HERE */
+
+/* QUESTION SECTION CSS START HERE*/
+
+.questionWrapper {
+     display: flex;
+     flex-direction: column;
+}
+
+.questionBox {
+     width: 850px;
+     margin: 0 auto;
+     overflow: hidden;
+}
+
+.question {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     width: 100%;
+     padding: 10px;
+     border: 1px solid #000000;
+     margin-bottom: 20px;
+     cursor: pointer;
+}
+
+.question h3 {
+     font-size: 16px;
+     line-height: 20px;
+     font-weight: 600;
+     font-family: "Montserrat", sans-serif;
+}
+
+.answer {
+     font-size: 16px;
+
+     font-weight: 400;
+     font-family: "Montserrat", sans-serif;
+     background-color: #dafee1;
+     opacity: 1;
+     transition: all 0.3s ease-in-out;
+     max-height: 0;
+     padding: 0 40px;
+     overflow: hidden;
+}
+
+.visibleAnswer {
+     max-height: 20rem;
+     line-height: 20px;
+     padding: 40px;
+     margin-bottom: 20px;
+     opacity: 1;
+     transform: translateY(0%);
+     transition: all 0.3s ease-in-out;
+}
+
+#answer i {
+     width: 35px;
+     height: 35px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 20px;
+     border-radius: 50px;
+     color: var(--white-color);
+     background-color: var(--primary-color);
+     transition: all 0.3s ease-in-out;
+}
+
+.getRotate {
+     transform: rotate(180deg);
+     transition: all 0.3s ease-in-out;
+}
+
+/* QUESTION SECTION CSS END HERE*/
 
 /*Pages Design start here*/
 
@@ -202,7 +519,7 @@
 
 .card {
      width: 26.6%;
-     height: 345px;
+     aspect-ratio: 1;
      cursor: pointer;
      position: relative;
      overflow: hidden;
@@ -259,12 +576,30 @@
      text-align: center;
      font-family: "Montserrat", sans-serif;
 }
+
+.fullProjectCard {
+     width: 30%;
+     aspect-ratio: 1;
+}
 /*Pages Design end here*/
+
+/** SINGLE PROJECT CSS START HERE**/
+
+.singleProject {
+     width: 1040px;
+     margin: 40px auto;
+}
+
+.singleProjectImage {
+     width: 100%;
+}
+
+/** SINGLE PROJECT CSS END HERE**/
 
 /* Footer Section start here*/
 
 .home-footer {
-     margin-top: 110px;
+     padding-top: 50px;
 }
 .footer-wrapper {
      padding-bottom: 20px;
@@ -297,10 +632,11 @@
      right: 0;
      bottom: 0;
      width: 100%;
-     height: 100%;
-     z-index: 77;
-     cursor: grab;
+     height: 100vh;
+     z-index: 22;
+     cursor: pointer;
      background-color: var(--secondary-color);
+     transition: all 0.3s ease-in-out;
 }
 
 /* Footer Section end here*/

@@ -4,29 +4,25 @@ const humburger = document.querySelector(".humburger");
 const portfolioBtn = document.querySelector(".portfolioBtn");
 const overley = document.querySelector("#overley");
 
+// Selecting for Question and Answer
+
+const Question = document.querySelectorAll("#answer");
+const getAnswer = document.querySelectorAll("#getAnswer");
+const faIcon = document.querySelectorAll(".fa-caret-down");
+
+Question.forEach((question, index) => {
+     question.addEventListener("click", () => {
+          getAnswer[index].classList.toggle("visibleAnswer");
+          faIcon[index].classList.toggle("getRotate");
+     });
+});
+
 const toggleMenu = () => {
-     navbarItem.classList.toggle("myclass");
+     navbarItem.classList.toggle("myNavbar");
      humburger.classList.toggle("active");
      navbarItem.style.opacity = "1";
-     overley.classList.add("overley");
+     overley.classList.toggle("overley");
 };
 
 navbar.addEventListener("click", toggleMenu);
 portfolioBtn.addEventListener("click", toggleMenu);
-
-overley.addEventListener(
-     "click",
-     function (event) {
-          if (!event.target.closest(".navbarItem")) {
-               closeModal();
-          }
-     },
-     false
-);
-
-function closeModal() {
-     overley.classList.remove("overley");
-     navbarItem.classList.toggle("myclass");
-     humburger.classList.toggle("active");
-     navbarItem.style.opacity = "0";
-}
