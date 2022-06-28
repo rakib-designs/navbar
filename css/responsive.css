@@ -146,7 +146,7 @@
      .introduce-me {
           display: flex;
           flex-direction: column;
-          padding: 100px 20px 80px;
+          padding: 100px 0 80px;
      }
 
      /** ACHIVMENT RESPONSIVE CSS **/
