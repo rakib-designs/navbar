@@ -146,7 +146,7 @@
      .introduce-me {
           display: flex;
           flex-direction: column;
-          padding: 100px 20px 80px;
+          padding: 100px 0 80px;
      }
 
      /** ACHIVMENT RESPONSIVE CSS **/
@@ -184,6 +184,43 @@
           width: 45%;
           margin: 10px;
      }
+
+     /** CONTACT FORM RESPONSIVE CSS **/
+
+     .myForm {
+          width: 100% !important;
+          padding: 0 30px;
+     }
+
+     .contact-title {
+          width: 100%;
+          padding: 0 50px;
+     }
+
+     /** ABOUT ME RESPONSIVE CSS **/
+
+     .about-me {
+          display: flex;
+          gap: 0 20px;
+     }
+
+     .about-me-photos {
+          display: none;
+     }
+     .my-skill-one .skill-title,
+     .my-skill-one .skill {
+          text-align: left;
+     }
+
+     .my-skill-two .skill-title,
+     .my-skill-two .skill {
+          text-align: left;
+     }
+     .skill-mobile-device {
+          display: flex !important;
+          flex-direction: row-reverse;
+          justify-content: flex-end;
+     }
 }
 
 @media only screen and (max-width: 500px) {
@@ -216,7 +253,7 @@
      }
 
      .myTitle {
-          padding: 0 10px;
+          padding: 0 30px;
      }
 
      /** HOME PROJECT RESPONSIVE CSS**/
@@ -228,7 +265,7 @@
      }
 
      .fullProjectCard {
-          width: 80%;
+          width: 95%;
           margin: 10px auto;
      }
 
@@ -275,7 +312,7 @@
      }
 
      .project-Wrapper .card {
-          width: 70%;
+          width: 90%;
           margin: 10px 0;
      }
 
@@ -283,6 +320,21 @@
 
      .myBtn {
           padding: 10px 20px;
+     }
+
+     /** ABOUT ME RESPONSIVE CSS**/
+
+     .about-me {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          padding: 0 75px;
+          margin: 0;
+     }
+
+     .my-skill.my-skill-two {
+          margin-top: -80px;
      }
 
      /** FOOTER RESPONSIVE CSS **/
