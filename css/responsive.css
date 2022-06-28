@@ -1,0 +1,295 @@
+@media only screen and (max-width: 1310px) {
+     /** RESPONSIVE MENU CSS **/
+
+     .menu {
+          padding: 0 50px;
+     }
+
+     /** CONTAINER RESPONSIVE CSS**/
+
+     .container {
+          width: 100%;
+     }
+
+     /** ALL PROJECT RESPONSIVE CSS **/
+
+     .project-Wrapper {
+          width: 100%;
+     }
+
+     .project-Wrapper .card {
+          width: 30%;
+     }
+
+     /** FOOTER RESPONSIVE CSS **/
+
+     .footer {
+          width: 100%;
+          padding: 0 30px;
+          margin-top: 50px;
+     }
+}
+
+@media only screen and (max-width: 1050px) {
+     /** SINGLE PROJECT RESPONSIVE CSS **/
+     .singleProject {
+          width: 100%;
+          padding: 0 20px;
+     }
+
+     .container {
+          width: 100% !important;
+     }
+
+     .container-fluid {
+          width: 100% !important;
+          padding: 0 25px;
+     }
+
+     /** QUESTION RESPONSIVE CSS**/
+
+     .questionBox {
+          width: 100%;
+     }
+
+     /** ACHIVMENT RESPONSIVE CSS **/
+
+     .myAchivmentSection {
+          width: 100%;
+     }
+
+     .myAchivment {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          gap: 50px 0;
+     }
+}
+
+@media only screen and (max-width: 991px) {
+     /* CLINT REVIEW AREA*/
+
+     .clientReview {
+          width: 100%;
+          padding: 20px;
+          display: flex;
+          gap: 20px 0;
+     }
+
+     .clientInfo {
+          width: 70%;
+     }
+
+     .clientName {
+          font-size: 25px;
+     }
+     .clientTitle {
+          font-size: 15px;
+     }
+
+     .clientPhotos {
+          width: 20%;
+          aspect-ratio: 1;
+     }
+}
+
+@media only screen and (max-width: 768px) {
+     /** RESPONSIVE CSS CONTAINER**/
+
+     .container {
+          width: 100% !important;
+     }
+
+     .container-fluid {
+          width: 100% !important;
+          padding: 0 25px;
+     }
+
+     /** RESPONSIVE MENU CSS**/
+
+     .menu {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          padding: 0 20px;
+     }
+
+     /** RESPONSIVE NAVBAR CSS**/
+
+     .header {
+          margin: 20px 0;
+     }
+
+     .navbarItem {
+          width: 100%;
+          position: absolute;
+          top: 80px;
+          left: 0;
+          transform: translateX(-100%);
+     }
+
+     .myNavbar {
+          height: 100vh;
+          visibility: visible;
+          transition: 0.5s;
+          transform: translateX(0);
+     }
+
+     /** PAGE NAME RESPONSIVE CSS**/
+
+     .pages-address {
+          display: none;
+     }
+
+     /** RESPONISVE INTRODUCE ME CSS**/
+
+     .introduce-me {
+          display: flex;
+          flex-direction: column;
+          padding: 100px 20px 80px;
+     }
+
+     /** ACHIVMENT RESPONSIVE CSS **/
+
+     .myAchivmentSection {
+          width: 100%;
+     }
+
+     .myAchivment {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          gap: 50px 0;
+     }
+
+     /** RESPONSIVE SECTION CSS**/
+
+     .sectionTitleWrapper {
+          width: 100%;
+     }
+
+     /** QUESTION RESPONSIVE CSS**/
+
+     .questionBox {
+          width: 100%;
+     }
+
+     /** ALL PROJECT RESPONSIVE CSS **/
+
+     .project-Wrapper {
+          width: 100%;
+     }
+
+     .project-Wrapper .card {
+          width: 45%;
+          margin: 10px;
+     }
+}
+
+@media only screen and (max-width: 500px) {
+     /** RESPONSIVE NAVBAR CSS**/
+
+     .header {
+          margin: 20px 0;
+     }
+
+     .navbarItem {
+          width: 100%;
+          position: absolute;
+          top: 80px;
+          left: 0;
+          transform: translateX(-100%);
+     }
+
+     .myNavbar {
+          height: 100vh;
+          visibility: visible;
+          transition: 0.5s;
+          transform: translateX(0);
+     }
+
+     /** MY INFO RESPONSIVE CSS**/
+
+     .myPhoto {
+          width: 100%;
+          aspect-ratio: 1;
+     }
+
+     .myTitle {
+          padding: 0 10px;
+     }
+
+     /** HOME PROJECT RESPONSIVE CSS**/
+
+     .home-project-Wrapper {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+     }
+
+     .fullProjectCard {
+          width: 80%;
+          margin: 10px auto;
+     }
+
+     /** ACHIVMENT RESPONSIVE CSS **/
+
+     .achivmentInfo p {
+          line-height: 30px;
+          font-size: 14px;
+     }
+
+     .achivmentInfo h2 {
+          margin-bottom: 10px;
+     }
+
+     /* CLINT REVIEW AREA*/
+
+     .clientReview {
+          width: 100%;
+          padding: 20px;
+          display: flex;
+          gap: 20px 0;
+          flex-direction: column;
+     }
+
+     .clientInfo {
+          width: 100%;
+     }
+
+     .clientName {
+          font-size: 25px;
+     }
+     .clientTitle {
+          font-size: 15px;
+     }
+
+     .clientPhotos {
+          width: 100%;
+     }
+
+     /** ALL PROJECT RESPONSIVE CSS **/
+
+     .project-Wrapper {
+          width: 100%;
+     }
+
+     .project-Wrapper .card {
+          width: 70%;
+          margin: 10px 0;
+     }
+
+     /** RESPONSIVE BUTTON CSS **/
+
+     .myBtn {
+          padding: 10px 20px;
+     }
+
+     /** FOOTER RESPONSIVE CSS **/
+
+     .copyright-text {
+          text-align: center;
+          width: 50%;
+          font-size: 14px !important;
+     }
+}

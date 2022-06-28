@@ -17,18 +17,33 @@
                rel="stylesheet"
                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
           />
+
+          <!-- slick slider -->
+
+          <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css" />
+          <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css" />
+
           <title>Home - Manjurul islam</title>
           <link rel="stylesheet" href="./css/index.css" />
           <link rel="stylesheet" href="./font/font.css" />
           <link rel="stylesheet" href="./color/color.css" />
+          <link rel="stylesheet" href="./css/responsive.css" />
      </head>
      <body>
           <div class="container">
                <div class="header">
                     <div class="menu">
                          <a href="../../index.html" class="brand">
-                              <img src="./img/logo.png" alt="logo" />
+                              <img
+                                   src="./img/logo.png"
+                                   alt="logo"
+                                   class="logo"
+                              />
                          </a>
+
+                         <div class="pages-address">
+                              <h1>Md Manjurul Islam</h1>
+                         </div>
 
                          <div class="navbar">
                               <div class="navbar" id="navbar">
@@ -40,6 +55,11 @@
                               </div>
 
                               <ul class="navbarItem" id="navbarItem">
+                                   <li class="navItem">
+                                        <a class="navLink" href="./index.html"
+                                             >Home Page</a
+                                        >
+                                   </li>
                                    <li class="navItem">
                                         <a
                                              class="navLink"
@@ -61,13 +81,7 @@
                                              >Ui/Ux Design</a
                                         >
                                    </li>
-                                   <li class="navItem">
-                                        <a
-                                             class="navLink black"
-                                             href="./pages/presentation/Presentation.html"
-                                             >Presentation</a
-                                        >
-                                   </li>
+
                                    <li class="navItem">
                                         <a
                                              class="navLink"
@@ -108,35 +122,467 @@
                     </div>
                </div>
                <div class="main">
-                    <div class="introduce-me">
-                         <div class="introduce-me-wrapper">
-                              <img
-                                   src="./img/me.png"
-                                   alt="manjurul islam"
-                                   class="myPhoto"
-                              />
-                              <h1 class="myName">Md Manjurul Islam</h1>
-                              <p class="title">Certified Graphic Designer</p>
-                              <div class="important_btn">
-                                   <button class="aboutBtn">
-                                        <a href="./pages/aboutMe/aboutMe.html"
-                                             >About Me</a
-                                        >
-                                   </button>
-                                   <button class="portfolioBtn">
-                                        My Portfolio
-                                   </button>
+                    <div class="container-fluid">
+                         <div class="introduce-me">
+                              <div class="introduce-me-wrapper">
+                                   <img
+                                        src="./img/me.png"
+                                        alt="manjurul islam"
+                                        class="myPhoto"
+                                   />
+                              </div>
+                              <div class="myTitle">
+                                   <h1 class="myName">
+                                        Build a brand That's 100% you.
+                                   </h1>
+                                   <p class="title">
+                                        I help businesses to reach out the
+                                        audience through visual identity design.
+                                   </p>
+
+                                   <div class="importantBtn">
+                                        <button class="myBtn">
+                                             <a href="#">Book a call</a>
+                                        </button>
+                                        <button class="myBtn">
+                                             <a
+                                                  href="./pages/aboutMe/aboutMe.html"
+                                                  >About Me</a
+                                             >
+                                        </button>
+                                   </div>
                               </div>
                          </div>
+
+                         <section class="myAchivmentSection">
+                              <div class="myAchivment">
+                                   <div class="achivmentInfo">
+                                        <h2>My Achievement</h2>
+                                        <p>
+                                             ✦ Udemy certified graphic designer.
+                                        </p>
+                                        <p>✦ Top Rated freelancer in Upwork.</p>
+                                        <p>
+                                             ✦ Content creation expert Award
+                                             2022
+                                        </p>
+                                        <p>✦ Creative Artist Award 2020.</p>
+                                   </div>
+
+                                   <div class="upworkScreenshot">
+                                        <img
+                                             src="./img/achivment/upwork.png"
+                                             alt=""
+                                        />
+                                   </div>
+                                   <div class="udemyScreenshot">
+                                        <img
+                                             src="./img/achivment/udemy.png"
+                                             alt=""
+                                        />
+                                   </div>
+                              </div>
+                         </section>
+
+                         <section class="clientSays">
+                              <div class="sectionTitleWrapper">
+                                   <h2 class="sectionTitle">
+                                        Here's what my clients have to say about
+                                        me:
+                                   </h2>
+                              </div>
+
+                              <div class="clientReviewWrapper">
+                                   <div class="owl-carousel owl-theme">
+                                        <div class="clientReview item">
+                                             <div class="clientInfo">
+                                                  <h2 class="clientName">
+                                                       Mohammad Rahman
+                                                  </h2>
+                                                  <span class="clientTitle">
+                                                       Founder & CEO Farisha
+                                                       Foods LLC, North
+                                                       Carolina, United States
+                                                  </span>
+                                                  <p class="aboutClient">
+                                                       Mr. Manjurul is an
+                                                       excellent and really
+                                                       talented designer. The
+                                                       communication with him
+                                                       was flawless, and he
+                                                       nailed exactly what I
+                                                       wanted. The whole design
+                                                       was extremely complete,
+                                                       with all the details I
+                                                       could wish for. I'm
+                                                       looking forward to using
+                                                       all of these in my new
+                                                       business. I'd recommend
+                                                       Manjurul and I'm going to
+                                                       work for him in the
+                                                       future for sure.
+                                                  </p>
+                                             </div>
+
+                                             <div class="clientPhotos">
+                                                  <img
+                                                       src="./img/client/client1.png"
+                                                       alt=""
+                                                  />
+                                             </div>
+                                        </div>
+
+                                        <div class="clientReview item">
+                                             <div class="clientInfo">
+                                                  <h2 class="clientName">
+                                                       Henrik Berglind
+                                                  </h2>
+                                                  <span class="clientTitle">
+                                                       CEO QNTMDNA, Stockholm,
+                                                       Sweden
+                                                  </span>
+                                                  <p class="aboutClient">
+                                                       Manjurul created
+                                                       something for my business
+                                                       that I really needed. He
+                                                       exceeded my expectations,
+                                                       and his willingness to
+                                                       correct mistakes (things
+                                                       I didn’t like) and change
+                                                       those errors to my
+                                                       likings was awesome. He
+                                                       made the perfect designs
+                                                       for my company and I’ll
+                                                       forever appreciate what
+                                                       he did for me. You need
+                                                       to book Manjurul asap!
+                                                  </p>
+                                             </div>
+
+                                             <div class="clientPhotos">
+                                                  <img
+                                                       src="./img/client/client2.png"
+                                                       alt=""
+                                                  />
+                                             </div>
+                                        </div>
+
+                                        <div class="clientReview item">
+                                             <div class="clientInfo">
+                                                  <h2 class="clientName">
+                                                       Valentin Simionato
+                                                  </h2>
+                                                  <span class="clientTitle">
+                                                       Sylvain-autoecole,
+                                                       Neuchâtel, Switzerland
+                                                  </span>
+                                                  <p class="aboutClient">
+                                                       Manjurul was great to
+                                                       work with and very
+                                                       knowledgeable. He
+                                                       delivered exactly what we
+                                                       asked for and earlier
+                                                       than advertised. He
+                                                       understand our needs and
+                                                       even offered input and
+                                                       suggestions for our
+                                                       brand. We would
+                                                       definitely recommend him
+                                                       for anyones future needs
+                                                       in logo design and
+                                                       branding identity. Look
+                                                       forward to working with
+                                                       him in the future.
+                                                  </p>
+                                             </div>
+
+                                             <div class="clientPhotos">
+                                                  <img
+                                                       src="./img/client/client3.png"
+                                                       alt=""
+                                                  />
+                                             </div>
+                                        </div>
+
+                                        <div class="clientReview item">
+                                             <div class="clientInfo">
+                                                  <h2 class="clientName">
+                                                       Ryan Wagner
+                                                  </h2>
+                                                  <span class="clientTitle">
+                                                       Cloud Solution Architect,
+                                                       Alberta, Canada
+                                                  </span>
+                                                  <p class="aboutClient">
+                                                       Manjurul did a awesome
+                                                       work! At first I didnt
+                                                       know what to expect,
+                                                       looking for brand
+                                                       designer. I was super
+                                                       fortunate to have chosen
+                                                       the right person to work
+                                                       with. I chose brands
+                                                       based off his portfolio,
+                                                       and every moment forward
+                                                       impressed me with how
+                                                       efficient, communicative,
+                                                       skilled, and hard working
+                                                       brands is. I’m walking
+                                                       away with a lot of value!
+                                                  </p>
+                                             </div>
+
+                                             <div class="clientPhotos">
+                                                  <img
+                                                       src="./img/client/client4.png"
+                                                       alt=""
+                                                  />
+                                             </div>
+                                        </div>
+
+                                        <div class="clientReview item">
+                                             <div class="clientInfo">
+                                                  <h2 class="clientName">
+                                                       Robin Curry
+                                                  </h2>
+                                                  <span class="clientTitle">
+                                                       Head Of Operations at
+                                                       Fusion Solutions,
+                                                       Queensland, Australia
+                                                  </span>
+                                                  <p class="aboutClient">
+                                                       Every brand wants a
+                                                       unique style and
+                                                       identity, and it is
+                                                       challenging for a
+                                                       designer to bring that to
+                                                       the table. Marrying the
+                                                       minimalist principle with
+                                                       a unique brand identity
+                                                       is the secret sauce to a
+                                                       good logo design in the
+                                                       modern business world.
+                                                       Manjurul is a capable
+                                                       graphic designer who
+                                                       understands these
+                                                       principles. We greatly
+                                                       appreciate all his hard
+                                                       work and effort and would
+                                                       recommend him to anyone
+                                                       who wants a good logo at
+                                                       an affordable price.
+                                                  </p>
+                                             </div>
+
+                                             <div class="clientPhotos">
+                                                  <img
+                                                       src="./img/client/client5.png"
+                                                       alt=""
+                                                  />
+                                             </div>
+                                        </div>
+
+                                        <div class="clientReview item">
+                                             <div class="clientInfo">
+                                                  <h2 class="clientName">
+                                                       Laprecia Gillespie
+                                                  </h2>
+                                                  <span class="clientTitle">
+                                                       Syringes & Thingz, LLC,
+                                                       Tennessee, United States
+                                                  </span>
+                                                  <p class="aboutClient">
+                                                       It was a great experience
+                                                       to work with Manjurul.
+                                                       Very polite, friendly,
+                                                       hard-working, creative,
+                                                       and most importantly
+                                                       always willing to go
+                                                       above and beyond to meet
+                                                       our requirements. He is
+                                                       very easy to work with as
+                                                       he is mostly available to
+                                                       answer any questions and
+                                                       also always looking for
+                                                       feedback from us. I am
+                                                       more than glad to use his
+                                                       designs to brand my
+                                                       business moving forward.
+                                                       We absolutely loved to
+                                                       work with him and would
+                                                       recommend him to anyone.
+                                                       Once again thank you for
+                                                       your hard work.
+                                                  </p>
+                                             </div>
+
+                                             <div class="clientPhotos">
+                                                  <img
+                                                       src="./img/client/client6.png"
+                                                       alt=""
+                                                  />
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+                         </section>
+
+                         <section class="fullPortfolio">
+                              <div class="sectionTitleWrapper">
+                                   <h2 class="sectionTitle">
+                                        Check out <br />
+                                        My favourite works!
+                                   </h2>
+                              </div>
+
+                              <div class="home-project-Wrapper">
+                                   <div class="card fullProjectCard">
+                                        <img
+                                             class="project-overview"
+                                             src="./img/LOGO_DESIGN/one.jpg"
+                                             alt=""
+                                        />
+
+                                        <div class="project-info">
+                                             <h3>Real Satate</h3>
+                                             <p>logo & brand Identity</p>
+                                        </div>
+                                   </div>
+                                   <div class="card fullProjectCard">
+                                        <img
+                                             class="project-overview"
+                                             src="./img/LOGO_DESIGN/two.jpg"
+                                             alt=""
+                                        />
+
+                                        <div class="project-info">
+                                             <h3>Real Satate</h3>
+                                             <p>logo & brand Identity</p>
+                                        </div>
+                                   </div>
+                                   <div class="card fullProjectCard">
+                                        <img
+                                             class="project-overview"
+                                             src="./img/LOGO_DESIGN/three.jpg"
+                                             alt=""
+                                        />
+
+                                        <div class="project-info">
+                                             <h3>Real Satate</h3>
+                                             <p>logo & brand Identity</p>
+                                        </div>
+                                   </div>
+                              </div>
+
+                              <div
+                                   class="projectWrapper"
+                                   style="margin-top: 50px"
+                              >
+                                   <button class="myBtn">
+                                        <a href="#">Full Portfolio</a>
+                                   </button>
+                              </div>
+                         </section>
+
+                         <section class="questionSection">
+                              <div class="sectionTitleWrapper">
+                                   <h2 class="sectionTitle">
+                                        Still got questions? I’ve got you
+                                        covered!
+                                   </h2>
+                              </div>
+                              <div class="questionWrapper">
+                                   <div class="questionBox">
+                                        <div class="question" id="answer">
+                                             <h3>What are your rates?</h3>
+                                             <i
+                                                  class="fa-solid fa-caret-down"
+                                             ></i>
+                                        </div>
+                                        <p class="answer" id="getAnswer">
+                                             I have a broad range of services so
+                                             I also have a very broad range for
+                                             my rates. That's why I first jump
+                                             on a call with my clients to know
+                                             which services can help them the
+                                             most.
+                                        </p>
+                                   </div>
+
+                                   <div class="questionBox">
+                                        <div class="question" id="answer">
+                                             <h3>What happens in a call?</h3>
+                                             <i
+                                                  class="fa-solid fa-caret-down"
+                                             ></i>
+                                        </div>
+                                        <p class="answer" id="getAnswer">
+                                             The discovery call is a 20-minute
+                                             free call that's used to help us
+                                             BOTH know if we're a good fit for
+                                             each other. I'll be asking you more
+                                             about your business, goals and
+                                             challenges. I'll also share my full
+                                             process.
+                                        </p>
+                                   </div>
+
+                                   <div class="questionBox">
+                                        <div class="question" id="answer">
+                                             <h3>Do you do payment plans?</h3>
+                                             <i
+                                                  class="fa-solid fa-caret-down"
+                                             ></i>
+                                        </div>
+                                        <p class="answer" id="getAnswer">
+                                             Smaller services like my intensive
+                                             and consultation calls require a
+                                             100% upfront. Payment for bigger
+                                             projects can be divided into 3
+                                             payments.
+                                        </p>
+                                   </div>
+
+                                   <div class="questionBox">
+                                        <div class="question" id="answer">
+                                             <h3>How can I trust you?</h3>
+                                             <i
+                                                  class="fa-solid fa-caret-down"
+                                             ></i>
+                                        </div>
+                                        <p class="answer" id="getAnswer">
+                                             I totally understand! Collaborating
+                                             with a complete stranger can be
+                                             scary. Feel free to discuss all
+                                             your concerns in our first call. I
+                                             also create an Agreement that
+                                             protects the BOTH of us during the
+                                             entire project.
+                                        </p>
+                                   </div>
+                              </div>
+                         </section>
+
+                         <section class="discoverySection">
+                              <div class="sectionTitleWrapper">
+                                   <h2 class="sectionTitle">
+                                        Are you ready to build a magnetic brand?
+                                   </h2>
+                              </div>
+
+                              <div class="projectWrapper">
+                                   <button class="myBtn">
+                                        <a href="#">Book Discovery call</a>
+                                   </button>
+                              </div>
+                         </section>
                     </div>
                </div>
 
-               <div class="footer">
-                    <div class="footer-wrapper home-footer">
+               <div class="footer home-footer">
+                    <div class="footer-wrapper">
                          <div class="social-link">
-                              <a href="https://www.behance.net/manjurulart">
-                                   <i class="fa-brands fa-behance"></i>
-                              </a>
+                              <i class="fa-brands fa-behance"></i>
                          </div>
 
                          <p class="copyright-text">
@@ -144,15 +590,31 @@
                          </p>
 
                          <div class="social-link">
-                              <a href="https://www.behance.net/manjurulart">
-                                   <i class="fa-brands fa-linkedin-in"></i>
-                              </a>
+                              <i class="fa-brands fa-linkedin-in"></i>
                          </div>
                     </div>
                </div>
           </div>
 
           <div id="overley"></div>
+
+          <script src="owlcarousel/jquery.min.js"></script>
+          <script src="owlcarousel/owl.carousel.min.js"></script>
           <script src="./js/index.js"></script>
+          <script>
+               $(".owl-carousel").owlCarousel({
+                    items: 1,
+                    loop: true,
+                    nav: true,
+                    navText: [
+                         '<i class="fa-solid fa-arrow-left"></i>',
+                         '<i class="fa-solid fa-arrow-right"></i>',
+                    ],
+                    dots: true,
+                    autoplay: true,
+                    autoplayTimeout: 2000,
+                    autoplayHoverPause: true,
+               });
+          </script>
      </body>
 </html>
