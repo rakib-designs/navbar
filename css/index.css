@@ -256,10 +256,11 @@
 .achivmentInfo h2 {
      font-family: "Editor-Bold", sans-serif;
      color: var(--black-color);
+     margin-bottom: 20px;
 }
 
 .achivmentInfo p {
-     line-height: 50px;
+     line-height: 30px;
      font-family: "Montserrat", sans-serif;
      color: var(--black-color);
 }
@@ -301,9 +302,13 @@
      text-align: center;
      font-size: 32px;
      padding: 80px 0;
-     text-transform: capitalize;
+     text-transform: lowercase;
      color: var(--black-color);
      font-family: "Editor-Bold", sans-serif;
+}
+
+.sectionTitle::first-letter {
+     text-transform: uppercase;
 }
 
 .clientName {
